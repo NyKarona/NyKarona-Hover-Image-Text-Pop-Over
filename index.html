@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    .container{
+        width: 700px;
+        height: 700px;
+        position: relative;
+    }
+    img{
+        width: 100%;
+    }
+
+    .des{
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    .des h1{
+
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .container:hover .des{
+        opacity: 1;
+        background: rgba(0,0,0,0.5);
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <img src="dog.jpg" alt="">
+        <div class="des">
+            <h1>Welcome to image hover effect</h1>
+            <p>Please All your description her</p>
+
+        </div>
+
+    </div>
+</body>
+</html>             
